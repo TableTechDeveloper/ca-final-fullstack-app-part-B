@@ -459,4 +459,11 @@ Single event page. Guest and host views:
 
 ## Testing
 
-<embed src="docs/server/Test Scripts - Dev Server Test.pdf" width="600" height="400" type="application/pdf">
+### Server testing
+
+#### Manual Testing
+[Dev Server](./docs/server/Test%20Scripts%20-%20Dev%20Server%20Test.pdf)  
+[Prod Server](./docs/server/Test%20Scripts%20-%20Prod%20Server%20Test.pdf)
+
+#### Auto Testing
+![Jest coverage report](docs/server/jest_coverage4.png)
