@@ -1,12 +1,12 @@
 # Game Plan Documentation
 
-[Part-A Repo](https://github.com/TableTechDeveloper/ca-final-fullstack-app-part-A)
-[Part-B Repo](https://github.com/TableTechDeveloper/ca-final-fullstack-app-part-B)
+[Part-A Repo](https://github.com/TableTechDeveloper/ca-final-fullstack-app-part-A)  
+[Part-B Repo](https://github.com/TableTechDeveloper/ca-final-fullstack-app-part-B)  
 
-[Front-end Repo](https://github.com/TableTechDeveloper/gameplan-frontend)
-[Back-end Repo](https://github.com/TableTechDeveloper/gameplan-backend)
-[Front-end Deployed site](https://gameplan-deploy1.netlify.app/)
-[Back-end Deployed site](https://gameplan-backend.onrender.com/)
+[Front-end Repo](https://github.com/TableTechDeveloper/gameplan-frontend)  
+[Back-end Repo](https://github.com/TableTechDeveloper/gameplan-backend)  
+[Front-end Deployed site](https://gameplan-deploy1.netlify.app/)  
+[Back-end Deployed site](https://gameplan-backend.onrender.com/)  
 
 - [Purpose](#purpose)
 - [Target Audience](#target-audience)
