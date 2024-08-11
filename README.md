@@ -533,9 +533,9 @@ While working together we learnt a lot about git, how to collaborate as a group,
 
 [Manual Client Testing](./docs/wireframes/Manual%20Testing.pdf)
 
-[Prod Client](./docs/server/Test%20Scripts%20-%20Prod%20Client%20Test.pdf)
+[Prod Client](./docs/client/Test%20Scripts%20-%20Prod%20Client%20Test.pdf)
 
-[Dev Client](./docs/server/Test%20Scripts%20-%20Dev%20Client%20Test.pdf)
+[Dev Client](./docs//client/Test%20Scripts%20-%20Prod%20Client%20Test.pdf)
 
 #### Auto Testing
 
