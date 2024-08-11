@@ -3,12 +3,12 @@
 ### Deviations from Part-A submission will be struck through.
 
 [Part-A Repo](https://github.com/TableTechDeveloper/ca-final-fullstack-app-part-A)  
-[Part-B Repo](https://github.com/TableTechDeveloper/ca-final-fullstack-app-part-B)  
+[Part-B Repo](https://github.com/TableTechDeveloper/ca-final-fullstack-app-part-B)
 
 [Front-end Repo](https://github.com/TableTechDeveloper/gameplan-frontend)  
 [Back-end Repo](https://github.com/TableTechDeveloper/gameplan-backend)  
 [Front-end Deployed site](https://gameplan.social/)  
-[Back-end Deployed site](https://gameplan-backend.onrender.com/)  
+[Back-end Deployed site](https://gameplan-backend.onrender.com/)
 
 - [Purpose](#purpose)
 - [Target Audience](#target-audience)
@@ -90,7 +90,7 @@ New Event:
 - ~~Publish event~~
 - ~~Preview Event~~
 - ~~Save as Draft~~  
-// As above, all events are published these no longer required.  
+  // As above, all events are published these no longer required.
 
 Events Page:
 
@@ -154,7 +154,7 @@ Backend Development:
 
 Deployment:
 
-- ~~Heroku~~  
+- ~~Heroku~~
 - Render
 - Netlify
 
@@ -170,7 +170,7 @@ Testing:
 - Jest
 - ~~Mocha~~
 - ~~Cypress~~  
-JEST was utilised for all automated testing
+  JEST was utilised for all automated testing
 
 Planning and Management:
 
@@ -476,6 +476,15 @@ Here is a screenshot of our backlog:
 And here is a screenshot of our timeline:
 ![jira-timeline](./docs/planning/jira_timeline.png)
 
+We worked in an Agile manner. We had a verbal retrospective after part-A in discord. And then did a standup 3 times per week on discord. We had a long collaborative meeting together at least once a week which included troubleshooting, debugging, deployment, and code alongs. We utilised sprints, epics, user stories, and issues in our Jira. See some examples below:
+![jira-sprint](./docs/planning/jira_sprint.png)
+
+![jira-epics](./docs/planning/jira_epics.png)
+
+![jira-_user_stories_and_issues_under_epics](./docs/planning/Jira_User_Stories_and_Issues_under_Epics.png)
+
+![discord-collaboration](./docs/planning/discord_collaboration.png)
+
 Previous screenshots from Part A:
 
 ![planning-initial-scope](./docs/planning/miro-initial-scoping.png)
@@ -496,17 +505,26 @@ Previous screenshots from Part A:
 
 ![planning-figma-01](./docs/planning/figma-01.png)
 
+While working together we learnt a lot about git, how to collaborate as a group, troubleshoot, and even rebase.
+
+![git_rebase_warning](./docs/planning/git_rebase_warning.png)
+
+![git_merge_editor](./docs/planning/git_merge_editor.png)
+
+![git_rebase_diagram](./docs/planning/git_rebase_diagram.png)
+
 ## Testing
 
 ### Server testing
 
 #### Manual Testing
 
-[Dev Server](./docs/server/Test%20Scripts%20-%20Dev%20Server%20Test.pdf)  
+[Dev Server](./docs/server/Test%20Scripts%20-%20Dev%20Server%20Test.pdf)
 
 [Prod Server](./docs/server/Test%20Scripts%20-%20Prod%20Server%20Test.pdf)
 
 #### Auto Testing
+
 ![Jest coverage report](docs/server/jest_coverage4.png)
 
 ### Front End Testing
@@ -522,6 +540,7 @@ Previous screenshots from Part A:
 #### Auto Testing
 
 Run automated testing with:
+
 ```bash
 npx vitest
 ```
@@ -537,173 +556,198 @@ npx vitest --watch
 ### User Endpoints
 
 1. **Register a New User**
-    - Endpoint: `POST /user/register`
-    - Description: Registers a new user with the provided details.
-    - Request Body:
-    ```json
-    {
-      "email": "user@example.com",
-      "password": "password123",
-      "username": "username",
-      "securityQuestionOne": "answer1",
-      "securityQuestionTwo": "answer2",
-      "securityQuestionThree": "answer3"
-    }
-    ```
-    - Response: Success message and user details.
+
+   - Endpoint: `POST /user/register`
+   - Description: Registers a new user with the provided details.
+   - Request Body:
+
+   ```json
+   {
+     "email": "user@example.com",
+     "password": "password123",
+     "username": "username",
+     "securityQuestionOne": "answer1",
+     "securityQuestionTwo": "answer2",
+     "securityQuestionThree": "answer3"
+   }
+   ```
+
+   - Response: Success message and user details.
 
 2. **User Login**
-    - Endpoint: `POST /user/login`
-    - Description: Logs in the user and returns a JWT token for authentication.
-    - Request Body:
-    ```json
-    {
-      "email": "user@example.com",
-      "password": "password123"
-    }
-    ```
-    - Response: JWT token and user details.
+
+   - Endpoint: `POST /user/login`
+   - Description: Logs in the user and returns a JWT token for authentication.
+   - Request Body:
+
+   ```json
+   {
+     "email": "user@example.com",
+     "password": "password123"
+   }
+   ```
+
+   - Response: JWT token and user details.
 
 3. **Update User Details**
-    - Endpoint: `PATCH /user/update`
-    - Description: Updates the user's profile information.
-    - Request Body:
-    ```json
-    {
-      "email": "newemail@example.com",
-      "username": "newUsername",
-      "location": "newLocation",
-      "bio": "newBio"
-    }
-    ```
-    - Response: Updated user details.
+
+   - Endpoint: `PATCH /user/update`
+   - Description: Updates the user's profile information.
+   - Request Body:
+
+   ```json
+   {
+     "email": "newemail@example.com",
+     "username": "newUsername",
+     "location": "newLocation",
+     "bio": "newBio"
+   }
+   ```
+
+   - Response: Updated user details.
 
 4. **Password Reset**
-    - Endpoint: `POST /user/password-reset`
-    - Description: Resets the user's password by answering security questions.
-    - Request Body:
-    ```json
-    {
-      "email": "user@example.com",
-      "securityQuestionOne": "answer1",
-      "securityQuestionTwo": "answer2",
-      "securityQuestionThree": "answer3",
-      "newPassword": "newPassword123"
-    }
-    ```
-    - Response: Success message.
+
+   - Endpoint: `POST /user/password-reset`
+   - Description: Resets the user's password by answering security questions.
+   - Request Body:
+
+   ```json
+   {
+     "email": "user@example.com",
+     "securityQuestionOne": "answer1",
+     "securityQuestionTwo": "answer2",
+     "securityQuestionThree": "answer3",
+     "newPassword": "newPassword123"
+   }
+   ```
+
+   - Response: Success message.
 
 5. **Get User Details**
-    - Endpoint: `GET /user`
-    - Description: Retrieves the currently authenticated user's details.
-    - Response: User details including email, username, location, and bio.
+
+   - Endpoint: `GET /user`
+   - Description: Retrieves the currently authenticated user's details.
+   - Response: User details including email, username, location, and bio.
 
 6. **Delete User Account**
-    - Endpoint: `DELETE /user`
-    - Description: Deletes the currently authenticated user's account.
-    - Response: Success message.
+   - Endpoint: `DELETE /user`
+   - Description: Deletes the currently authenticated user's account.
+   - Response: Success message.
 
 ### Game Endpoints
 
 1. **Search for Games**
-    - Endpoint: `GET /games/search`
-    - Description: Searches for games based on the query provided.
-    - Query Parameters:
-      - `query`: The search term.
-    - Response: A list of games matching the search query.
+
+   - Endpoint: `GET /games/search`
+   - Description: Searches for games based on the query provided.
+   - Query Parameters:
+     - `query`: The search term.
+   - Response: A list of games matching the search query.
 
 2. **Get Game Details by ID**
-    - Endpoint: `GET /games/:id`
-    - Description: Retrieves details for a specific game by its ID.
-    - Response: Game details including name, description, and image.
+
+   - Endpoint: `GET /games/:id`
+   - Description: Retrieves details for a specific game by its ID.
+   - Response: Game details including name, description, and image.
 
 3. **Add Game to User's Collection**
-    - Endpoint: `POST /games/add`
-    - Description: Adds a game to the authenticated user's collection.
-    - Request Body:
-    ```json
-    {
-      "gameId": "game123"
-    }
-    ```
-    - Response: Success message and updated game collection.
+
+   - Endpoint: `POST /games/add`
+   - Description: Adds a game to the authenticated user's collection.
+   - Request Body:
+
+   ```json
+   {
+     "gameId": "game123"
+   }
+   ```
+
+   - Response: Success message and updated game collection.
 
 4. **Get User's Game Collection**
-    - Endpoint: `GET /user/collection`
-    - Description: Retrieves the list of games in the authenticated user's collection.
-    - Response: A list of games in the user's collection.
+
+   - Endpoint: `GET /user/collection`
+   - Description: Retrieves the list of games in the authenticated user's collection.
+   - Response: A list of games in the user's collection.
 
 5. **Remove Game from User's Collection**
-    - Endpoint: `DELETE /user/collection/:id`
-    - Description: Removes a game from the authenticated user's collection by game ID.
-    - Response: Success message and updated game collection.
-
+   - Endpoint: `DELETE /user/collection/:id`
+   - Description: Removes a game from the authenticated user's collection by game ID.
+   - Response: Success message and updated game collection.
 
 ### Event Endpoints
 
 1. **Get User's Events**
-    - Endpoint: `GET /user/events`
-    - Description: Retrieves a list of events the authenticated user is hosting or attending.
-    - Query Parameters:
-      - `hosted`: If `true`, retrieves events hosted by the user. Otherwise, retrieves events the user is attending.
-    - Response: A list of events.
+
+   - Endpoint: `GET /user/events`
+   - Description: Retrieves a list of events the authenticated user is hosting or attending.
+   - Query Parameters:
+     - `hosted`: If `true`, retrieves events hosted by the user. Otherwise, retrieves events the user is attending.
+   - Response: A list of events.
 
 2. **Get All Public and Published Events**
-    - Endpoint: `GET /events`
-    - Description: Retrieves a list of all public and published events.
-    - Response: A list of events.
+
+   - Endpoint: `GET /events`
+   - Description: Retrieves a list of all public and published events.
+   - Response: A list of events.
 
 3. **Get Event Details by ID**
-    - Endpoint: `GET /events/:id`
-    - Description: Retrieves details for a specific event by its ID.
-    - Response: Event details including title, date, location, and participants.
+
+   - Endpoint: `GET /events/:id`
+   - Description: Retrieves details for a specific event by its ID.
+   - Response: Event details including title, date, location, and participants.
 
 4. **Register for an Event**
-    - Endpoint: `POST /events/:id/register`
-    - Description: Registers the authenticated user for a specific event.
-    - Response: Success message and updated event details.
+
+   - Endpoint: `POST /events/:id/register`
+   - Description: Registers the authenticated user for a specific event.
+   - Response: Success message and updated event details.
 
 5. **Leave an Event**
-    - Endpoint: `DELETE /events/:id/leave`
-    - Description: Removes the authenticated user from the participant list of a specific event.
-    - Response: Success message and updated event details.
+
+   - Endpoint: `DELETE /events/:id/leave`
+   - Description: Removes the authenticated user from the participant list of a specific event.
+   - Response: Success message and updated event details.
 
 6. **Create a New Event**
-    - Endpoint: `POST /events/new`
-    - Description: Creates a new event hosted by the authenticated user.
-    - Request Body:
-    ```json
-    {
-      "title": "Game Night",
-      "date": "2024-08-20T19:00:00.000Z",
-      "location": "New York",
-      "gameId": "game123",
-      "maxParticipants": 10,
-      "isPublic": true,
-      "isPublished": true
-    }
-    ```
-    - Response: Success message and event details.
+
+   - Endpoint: `POST /events/new`
+   - Description: Creates a new event hosted by the authenticated user.
+   - Request Body:
+
+   ```json
+   {
+     "title": "Game Night",
+     "date": "2024-08-20T19:00:00.000Z",
+     "location": "New York",
+     "gameId": "game123",
+     "maxParticipants": 10,
+     "isPublic": true,
+     "isPublished": true
+   }
+   ```
+
+   - Response: Success message and event details.
 
 7. **Delete an Event**
-    - Endpoint: DELETE /events/:id
-    - Description: Deletes a specific event hosted by the authenticated user.
-    - Response: Success message.
+
+   - Endpoint: DELETE /events/:id
+   - Description: Deletes a specific event hosted by the authenticated user.
+   - Response: Success message.
 
 8. **Update Event Details**
-    - Endpoint: PATCH /events/:id
-    - Description: Updates the details of a specific event hosted by the authenticated user.
-    - Request Body:
-    ```json
-    {
-      "title": "Updated Game Night",
-      "date": "2024-08-25T19:00:00.000Z",
-      "location": "Los Angeles",
-      "maxParticipants": 12,
-      "isPublic": false,
-      "isPublished": true
-    }
-    ```
-    - Response: Updated event details.
-
-
+   - Endpoint: PATCH /events/:id
+   - Description: Updates the details of a specific event hosted by the authenticated user.
+   - Request Body:
+   ```json
+   {
+     "title": "Updated Game Night",
+     "date": "2024-08-25T19:00:00.000Z",
+     "location": "Los Angeles",
+     "maxParticipants": 12,
+     "isPublic": false,
+     "isPublished": true
+   }
+   ```
+   - Response: Updated event details.
