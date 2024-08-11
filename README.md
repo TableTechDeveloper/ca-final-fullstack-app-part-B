@@ -480,11 +480,32 @@ Previous screenshots from Part A:
 ### Server testing
 
 #### Manual Testing
+
 [Dev Server](./docs/server/Test%20Scripts%20-%20Dev%20Server%20Test.pdf)  
+
 [Prod Server](./docs/server/Test%20Scripts%20-%20Prod%20Server%20Test.pdf)
 
 #### Auto Testing
 ![Jest coverage report](docs/server/jest_coverage4.png)
+
+### Front End Testing
+
+#### Manual Testing
+
+[Manual User Testing](./docs/wireframes/Manual%20Testing.pdf)
+
+#### Auto Testing
+
+Run automated testing with:
+```bash
+npx vitest
+```
+
+Or:
+
+```bash
+npx vitest --watch
+```
 
 ## Endpoints
 
@@ -659,3 +680,5 @@ Previous screenshots from Part A:
     }
     ```
     - Response: Updated event details.
+
+
