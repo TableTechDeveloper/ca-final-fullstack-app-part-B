@@ -518,6 +518,10 @@ Previous screenshots from Part A:
 [Manual Client Testing](./docs/server/Test%20Scripts%20-%20Dev%20Client%20Test.pdf)
 
 
+[Dev Client](./docs/client/Test%20Scripts%20-%20Dev%20Client%20Test.pdf)  
+
+[Prod Client](./docs/client/Test%20Scripts%20-%20Prod%20Client%20Test.pdf)
+
 #### Auto Testing
 
 Run automated testing with:
