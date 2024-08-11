@@ -384,6 +384,27 @@ Utilising Agile Methodologies, we have broken down the project further as follow
 
 ## Wireframes
 
+### Changes from Part-A to Part-B
+
+The following changes were made for the final deployed app:
+
+- **Edit Profile page:**
+  - Profile photo removed - this decision was made to simplify our work.
+  - New Password removed from page - Password reset moved to only be via the popup so as not to repeat functionality.
+- **Discover Games page:**
+  - Search result limited to a single item (strict mode) - This decision was made due to the BoardGameGeek API returning very large numbers of results, and do simplify implementation. The downside is that you must search for the exact game name otherwise it doesn't return a result at all.
+- **My Events page:**
+  - View Drafts removed - drafts were not implemented in order to simplify out work. Events can still be edited and made private so no major functionality has been lost.
+- **Event Card:**
+  - Edit / Cancel / Join / Leave buttons removed - These were removed from the event preview cards so that functions were not duplicated unneccesarily. All event functions are accessed from the main event page.
+- **New Event page:**
+  - Description and draft functions removed.
+- **Event Page:**
+  - Traffic-light Indicator removed - this decision was made due to time constraints and not wanting to over-complicate our work.
+
+![image](./docs/wireframes/frames_changes.jpg)
+![image](./docs/wireframes/final_frames.jpg)
+
 Wireframes have been planned in mobile (360px wide), tablet (744px wide), and desktop (1280px wide) sizes. The max page width content width for any larger screen sizes will be limited to 1280px.
 
 ### Sitemap
@@ -490,9 +511,12 @@ Previous screenshots from Part A:
 
 ### Front End Testing
 
-#### Manual Testing
+#### Client Testing
 
-[Manual User Testing](./docs/wireframes/Manual%20Testing.pdf)
+[Manual Client Testing](./docs/wireframes/Manual%20Testing.pdf)
+[Manual Client Testing](./docs/server/Test%20Scripts%20-%20Prod%20Client%20Test.pdf)
+[Manual Client Testing](./docs/server/Test%20Scripts%20-%20Dev%20Client%20Test.pdf)
+
 
 #### Auto Testing
 
