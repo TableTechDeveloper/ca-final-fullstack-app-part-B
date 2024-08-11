@@ -1,5 +1,7 @@
 # Game Plan Documentation
 
+### Deviations from Part-A submission will be struck through.
+
 [Part-A Repo](https://github.com/TableTechDeveloper/ca-final-fullstack-app-part-A)  
 [Part-B Repo](https://github.com/TableTechDeveloper/ca-final-fullstack-app-part-B)  
 
@@ -46,7 +48,7 @@ Game Event Creation:
 
 - Search and select the preferred game from the BoardGameGeek API
 - Specify game, time, location, player minimum and maximum count
-- Save the game event as a draft before publishing it for viewing
+- ~~Save the game event as a draft before publishing it for viewing~~ // Drafts seen as not required, as events are editable and require minimal information.
 
 Game Event Discovery:
 
@@ -58,7 +60,7 @@ Game Event Discovery:
 Game Collection Management:
 
 - Build a digital library of owned gamed
-- Click into it to get detailed game information as a link to BoardGameGeek
+- ~~Click into it to get detailed game information as a link to BoardGameGeek~~ // All information necissary for event planning is available in API call
 
 Event Page:
 
@@ -84,9 +86,10 @@ New Event:
 - Minimum players
 - Maximum players
 - Is event private
-- Publish event
-- Preview Event
-- Save as Draft
+- ~~Publish event~~
+- ~~Preview Event~~
+- ~~Save as Draft~~  
+// As above, all events are published these no longer required.  
 
 Events Page:
 
@@ -146,10 +149,12 @@ Backend Development:
   - bcryptjs
   - JWT
   - dotenv
+  - **CORS** // New added
 
 Deployment:
 
-- Heroku
+- ~~Heroku~~  
+- Render
 - Netlify
 
 DevOps and Version Control:
@@ -162,14 +167,16 @@ Testing:
 
 - Bruno
 - Jest
-- Mocha
-- Cypress
+- ~~Mocha~~
+- ~~Cypress~~  
+JEST was utilised for all automated testing
 
 Planning and Management:
 
 - Trello
 - Miro
 - Discord
+- **JIRA** // New added
 
 Design and Prototyping:
 
