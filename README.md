@@ -494,6 +494,10 @@ Previous screenshots from Part A:
 
 [Manual User Testing](./docs/wireframes/Manual%20Testing.pdf)
 
+[Dev Client](./docs/client/Test%20Scripts%20-%20Dev%20Client%20Test.pdf)  
+
+[Prod Client](./docs/client/Test%20Scripts%20-%20Prod%20Client%20Test.pdf)
+
 #### Auto Testing
 
 Run automated testing with:
