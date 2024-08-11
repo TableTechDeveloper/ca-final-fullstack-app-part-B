@@ -477,9 +477,9 @@ And here is a screenshot of our timeline:
 ![jira-timeline](./docs/planning/jira_timeline.png)
 
 We worked in an Agile manner. We had a verbal retrospective after part-A in discord. And then did a standup 3 times per week on discord. We had a long collaborative meeting together at least once a week which included troubleshooting, debugging, deployment, and code alongs. We utilised sprints, epics, user stories, and issues in our Jira. See some examples below:
-![jira-sprint](./docs/planning/jira_sprint.png)
+![jira-sprint](./docs/planning/Jira_Sprint.png)
 
-![jira-epics](./docs/planning/jira_epics.png)
+![jira-epics](./docs/planning/Jira_Epics.png)
 
 ![jira-_user_stories_and_issues_under_epics](./docs/planning/Jira_User_Stories_and_Issues_under_Epics.png)
 
